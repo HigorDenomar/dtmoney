@@ -9,17 +9,17 @@ type Transaction = {
   id: number;
   title: string;
   amount: number,
-  type: string,
+  type: 'deposit' | 'withdraw',
   category: string,
-  createdAt: Date,
+  createdAt: string,
 }
 
 export function TransactionsTable() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
 
   useEffect(() => {
-    api.get<Transaction[]>('transactions')
-      .then(response => setTransactions(response.data));
+    api.get<{transactions: Transaction[]}>('transactions')
+      .then(response => setTransactions(response.data.transactions));
   }, []);
 
   return (
@@ -38,9 +38,18 @@ export function TransactionsTable() {
           {transactions.map(transaction => (
             <tr key={transaction.id}>
               <td>{transaction.title}</td>
-              <td className="deposit">R$1200,00</td>
+              <td className={transaction.type}>
+                {transaction.type === 'withdraw' && '- '}
+
+                {new Intl.NumberFormat('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL',
+                }).format(transaction.amount)}
+              </td>
               <td>{transaction.category}</td>
-              <td>04/11/2021</td>
+              <td>
+                {new Intl.DateTimeFormat('pt-BR').format(new Date(transaction.createdAt))}
+              </td>
             </tr>
           ))}
         </tbody>
