@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :root {
     --red: #E52E4D;
+    --green: #33cc95;
     --blue: #5429cc;
     --blue-light: #6933ff;
     
@@ -38,6 +39,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body, input, textarea, button {
     font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
     font-weight: 400;
   }
 
