@@ -4,13 +4,18 @@ import {
   Container, Content,
 } from './styles';
 
-export function Header() {
+type Props = {
+  onOpenNewTransactionModal: () => void;
+}
+
+export function Header({ onOpenNewTransactionModal }: Props) {
+
   return (
     <Container>
       <Content>
         <img src={logoImg} alt="DT Money" />
 
-        <button type="button">
+        <button type="button" onClick={onOpenNewTransactionModal}>
           Nova transação
         </button>
       </Content>
