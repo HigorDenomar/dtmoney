@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+<p align="center">
+   <img src="./src/assets/logo.svg" alt="dt money" width="220"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="Linguagens" src="https://img.shields.io/github/languages/count/HigorDenomar/dtmoney?color=%236933FF" />
+  <img alt="Último commit" src="https://img.shields.io/github/last-commit/HigorDenomar/dtmoney?color=%236933FF" />
+  <img alt="Licença" src="https://img.shields.io/github/license/HigorDenomar/dtmoney?color=%236933FF" />
+</p>
 
-## Available Scripts
+<p align="center">
+  Projeto para gerenciar o seu dinheiro, desenvolvido durante o segundo módulo do treinamento de ReactJS do Ignite.
 
-In the project directory, you can run:
+  <img src="./.github/print.png" />
+</p>
 
-### `yarn start`
+## Tecnologias
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [MirageJS](https://miragejs.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
+<br />
 
-### `yarn test`
+## Como usar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Clone o projeto:
 
-### `yarn build`
+```sh
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone https://github.com/HigorDenomar/dtmoney
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Rode o projeto (npm)
 
-### `yarn eject`
+```sh
+# Entre na pasta do projeto
+cd dtmoney
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Instale as dependências
+npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Rode o projeto (ele será aberto em http://localhost:3000)
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Ou, se preferir o yarn:
 
-## Learn More
+```sh
+# Entre na pasta do projeto
+cd dtmoney
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Instale as dependências
+yarn
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Rode o projeto (ele será aberto em http://localhost:3000)
+yarn start
+
+```
+
+---
+<br />
+
+<p>Com ❤️ <a src="https://github.com/HigorDenomar" alt="Higor Denomar">Higor Denomar</a> </p>
+
+<a href="https://www.linkedin.com/in/higordenomar/">
+  <img alt="HigorDenomar" src="https://img.shields.io/badge/-HigorDenomar-5429CC?style=flat&logo=Linkedin&logoColor=white" />
+</a>
+<a href="mailto:higordenomar@hotmail.com">
+  <img alt="HigorDenomar" src="https://img.shields.io/badge/-higordenomar%40gmail.com-5429CC?style=flat&logo=Gmail&logoColor=white" />
+</a>
