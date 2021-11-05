@@ -70,6 +70,6 @@ yarn start
 <a href="https://www.linkedin.com/in/higordenomar/">
   <img alt="HigorDenomar" src="https://img.shields.io/badge/-HigorDenomar-5429CC?style=flat&logo=Linkedin&logoColor=white" />
 </a>
-<a href="mailto:higordenomar@hotmail.com">
-  <img alt="HigorDenomar" src="https://img.shields.io/badge/-higordenomar%40gmail.com-5429CC?style=flat&logo=Gmail&logoColor=white" />
+<a href="mailto:contato.higordenomar@hotmail.com">
+  <img alt="HigorDenomar" src="https://img.shields.io/badge/-contato.higordenomar%40gmail.com-5429CC?style=flat&logo=Gmail&logoColor=white" />
 </a>
