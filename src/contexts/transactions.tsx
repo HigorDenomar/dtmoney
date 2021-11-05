@@ -14,8 +14,11 @@ type Transaction = {
   createdAt: string,
 }
 
+type TransactionInput = Omit<Transaction, 'id' | 'createdAt'>;
+
 type TransactionsContextProps = {
   transactions: Transaction[];
+  createTransaction: (transaction: TransactionInput) => Promise<void>;
 }
 
 export const TransactionsContext = createContext({} as TransactionsContextProps);
@@ -28,8 +31,16 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
       .then(response => setTransactions(response.data.transactions));
   }, []);
 
+  async function createTransaction(transaction: TransactionInput) {
+    const response = await api.post('transactions', transaction);
+
+    console.log(response.data.transaction);
+
+    setTransactions([response.data.transaction, ...transactions]);
+  }
+
   return (
-    <TransactionsContext.Provider value={{transactions}}>
+    <TransactionsContext.Provider value={{transactions, createTransaction}}>
       {children}
     </TransactionsContext.Provider>
   );
