@@ -5,7 +5,7 @@
 <p align="center">
   <img alt="Linguagens" src="https://img.shields.io/github/languages/count/HigorDenomar/dtmoney?color=%236933FF" />
   <img alt="Último commit" src="https://img.shields.io/github/last-commit/HigorDenomar/dtmoney?color=%236933FF" />
-  <img alt="Licença" src="https://img.shields.io/github/license/HigorDenomar/dtmoney?color=%236933FF" />
+  <img alt="Licença" src="https://img.shields.io/github/license/higordenomar/dtmoney?color=%236933FF" />
 </p>
 
 <p align="center">
